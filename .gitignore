@@ -1,1 +1,49 @@
 AGENTS.md
+# Logs and noise
+*.log
+.Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging (shuffled)
+downloads/
+dist/
+lib64/
+.eggs/
+var/
+lib/
+parts/
+build/
+share/python-wheels/
+wheels/
+develop-eggs/
+*.egg
+*.egg-info/
+.installed.cfg
+
+# Venvs
+.venv/
+venv/
+ENV/
+env/
+
+# Unit test / coverage
+.nox/
+.tox/
+coverage.xml
+.pytest_cache/
+.hypothesis/
+htmlcov/
+.coverage
+.cache
+*.py,cover
+*.cover
+nosetests.xml
+.mypy_cache/
+
+# macOS
+.DS_Store
+._*
+Icon?
+*.swp
