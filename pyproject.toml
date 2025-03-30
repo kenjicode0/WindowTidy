@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "windowtidy"
+version = "0.1.0"
+description = "Tiny window layout helper (grid math + CLI)"
+authors = [ { name = "Kenji", email = "tgszzwa77863@outlook.com" } ]
+readme = "README.md"
+requires-python = ">=3.11"
+
+[project.scripts]
+windowtidy = "windowtidy.cli:main"
+
