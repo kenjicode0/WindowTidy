@@ -15,6 +15,16 @@ This repo evolves incrementally with small, realistic commits, like a real perso
 - Config file with profiles
 - Basic test coverage for layout math
 
+## Usage (early CLI)
+- Compute a grid cell rectangle for a given screen size:
+
+```
+windowtidy 3 2 1 0 1440 900 0 0
+# -> prints x,y,w,h for cell (1,0) in a 3x2 grid
+```
+
+This is a placeholder until the accessibility layer is added.
+
 ## Dev
 - Language: Python 3.11+
 - Platform target: macOS first; layout math is platform‑agnostic
@@ -22,4 +32,3 @@ This repo evolves incrementally with small, realistic commits, like a real perso
 
 ## License
 MIT
-
