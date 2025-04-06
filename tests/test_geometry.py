@@ -1,5 +1,7 @@
 import pytest
 from windowtidy.geometry import Grid, Rect
+from windowtidy import geometry
+from windowtidy.presets import thirds, halves
 
 def test_cell_basic():
     g = Grid(2, 2)
@@ -17,3 +19,9 @@ def test_last_col_row_take_remainder():
 def test_inset():
     r = Rect(0,0,100,100).inset(5, 3)
     assert (r.x, r.y, r.w, r.h) == (5,3,90,94)
+
+
+def test_presets():
+    b = Rect(0,0,120,60)
+    assert thirds(b, 0).w in (40,)
+    assert halves(b, True).w in (60,)
