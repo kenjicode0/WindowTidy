@@ -25,6 +25,13 @@ windowtidy 3 2 1 0 1440 900 0 0
 
 This is a placeholder until the accessibility layer is added.
 
+### Config
+Optional config at `~/.config/windowtidy/config.json`:
+
+```
+{"grid_cols": 3, "grid_rows": 2}
+```
+
 ## Dev
 - Language: Python 3.11+
 - Platform target: macOS first; layout math is platform‑agnostic
